@@ -1,0 +1,7 @@
+git config: command used to set or display configuration option such username or email.
+____________________
+git init: command creates a new Git repository.
+____________________
+git remote: command lets you view, and delete connections to other repositories
+____________________
+git merge: command used to combine two branches ("combines changes from a branch to a target branch").
