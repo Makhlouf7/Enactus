@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+}
+img{
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+}
+#form{
+    display: grid;
+    margin: 0px;
+    padding: 30PX;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: minmax(150px, 150px) minmax(300px, 300px);
+    gap: 10px;
+}
+button{
+    border-radius: 10px;
+    background-color: #f8f6f6;
+    border-color: azure;
+}

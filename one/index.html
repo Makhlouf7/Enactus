@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- support any language -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enactus form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./images/logo.jpg" alt="enactus logo" id="logo">
+    <div id="form">
+        <div>
+            <input type="text" id="user" placeholder="Username">
+        </div>
+        <div>
+            <input type="password" id="pass" placeholder="Password">
+        </div>
+        <div>
+            <input type="text" id="city" placeholder="City Of Emplyment">
+        </div>
+        <div>
+            <select id="server">
+                <option value="chose server">choose server</option>
+                <option value="ahmed">ahmed</option>
+                <option value="osama">osama</option>
+                <option value="Abdo">Abdo</option>
+            </select>
+        </div>
+        <div>
+            <label for="role">please specify your role:</label>
+        </div>
+        <div>
+            <input type="radio" name="role" id="admin"/>
+            <label for="admin">Admin</label>
+            <input type="radio" name="role" id="eng"/>
+            <label for="eng">Engneer</label>    
+            <input type="radio" name="role" id="manger"/>
+            <label for="manger">Manager</label>
+            <input type="radio" name="role" id="guest"/>
+            <label for="guest">Guest</label>
+        </div>
+            
+        <div>
+            <label for="sign">Single Sign-On:</label>
+        </div>
+        <div>
+            <input type="checkbox" name="sign" id="mail"/>
+            <label for="mail">Mail</label>
+            <input type="checkbox" name="sign" id="pay"/>
+            <label for="pay">Payroll</label>
+            <input type="checkbox" name="sign" id="service"/>
+            <label for="service">Self-service</label>
+        </div>
+        <div>
+            <button>Login</button>
+            <button>Reset</button>
+        </div>
+    </div>    
+    <a href="./table.html">Table</a>
+</body>
+</html>
