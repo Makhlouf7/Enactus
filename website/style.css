@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+#head{
+    margin: 1%;
+}
+.page{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    background-color: #f0eded;
+    padding: 20px 15px;
+    gap: 45px;
+}
+.headSide{
+    width: 25%;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+}
+.leftItem{
+    background-color: #ffa500;
+}
+.headSide > p{
+    margin: 0;
+}
+.contact{
+    background-color: black;
+    color: #FFFFFF;
+}
+.page > a{
+    font-size: 1.35rem;
+    text-decoration-line: none;
+}
+/* hero style */
+#hero{
+    margin: 0 1%;
+    border-radius: 2%;
+    background-color: #434343;
+}
+#hero > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 520px;
+}
+h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    padding: 2.5% 0 0 3%;
+}
+#hero > .container > p{
+    background-color: #ffa500;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    color: #FFFFFF;
+    width: 8%;
+    padding: 1.5% 2.5%;
+    margin: 0 0 3% 3%;
+    border-radius: 5%;
+    text-align: center;
+}
+/* features style */
+#features{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+    align-items: center;
+    margin: 1%;
+    background-color: #ffa500;
+}
+#features > h2{
+    font-size: large;
+    color: #FFFFFF;
+    opacity: 0.9;
+    padding: 2% 0;
+}
+#features > p{
+    font-size: 3.5rem;
+    width: 78%;
+    color: #FFFFFF;
+    opacity: 0.9;
+    padding-bottom: 3.5%;
+    text-align: center;
+}
+#features > .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 2%;
+    margin: 0 3%;
+}
+#features .item{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 300px;
+    padding: 30px;
+    border-radius: 3.5%;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+#features > .container h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+#features > .container h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#features .description p{
+    padding: 5%;
+}
+#features .description{
+    background-color: #aeaeae;
+    border-radius: 4%;
+}
+/* partners */
+#partners{
+    margin: 0 1%;
+    border-radius: 2%;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+#partners > .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 3.5% 0;
+}
+#partners > h2{
+    color: #FFFFFF;
+    padding-top: 3%;
+    opacity: 0.9;
+}
+#partners .card{
+    width: 20%;
+    height: 200px;
+    border-radius: 3.5%;
+    background-color: #aeaeae;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+/* consultation */
+#consultation{
+    margin: 1%;
+    background-color: #313131;
+    border-radius: 2%;
+}
+#consultation > h2{
+    text-align: center;
+    padding: 2%;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+#consultation > .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#consultation .item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#consultation .item2{
+    padding: 2%;
+    
+}
+#consultation input{
+    padding: 6%;
+    width: 350px;
+    height: 20px;
+    border-radius: 5%;
+}
+#consultation button{
+    background-color: #ffa500;
+    color: #FFFFFF;
+    height: 71.4px;
+    width: 401.8px;
+    font-size: medium;
+}
+#consultation .item1{
+    width: 50%;
+    color: #FFFFFF;
+    padding: 2%;
+    justify-content: space-between;
+}
+#consultation .item1 > p{
+    padding-bottom: 2.5%;
+}
+#consultation .item1 > h3{
+    font-size: 5rem;
+}
+/* footer */
+footer{
+    margin: 0 1% 1% 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+footer > .box1{
+    width: 75%;
+    background-color: #ffa500;
+    border-radius: 2%;
+}
+footer .container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 2.5%;
+}
+footer .container1 > input{
+    width: 40%;
+    padding: 1.65%;
+    border-radius: 3%;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+footer .container1 > button{
+    width: 15%;
+    background-color: #1e1e1e;
+    color: #FFFFFF;
+    opacity: 0.9;
+    font-size: 1.25rem;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+footer .container1 > h3{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+footer .container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer .container2 > .item > h4{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+footer .item{
+    padding: 4%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+footer > .box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #434343;
+    width: 25%;
+    border-radius: 2%;
+    padding: 2%;
+}
+footer > .box2  h3{
+    font-size: 2rem;
+    color: #FFFFFF;   
+    opacity: 0.9; 
+    margin-bottom: 8%;
+}
+footer > .box2  p{
+    color: #FFFFFF;   
+    opacity: 0.9;
+}
+footer > .box2 > a{
+    text-decoration-line: none;
+    color: #FFFFFF;   
+    opacity: 0.9;
+    
+}
