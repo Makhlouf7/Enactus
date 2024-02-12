@@ -5,11 +5,19 @@
 body{
     overflow-x: hidden;
 }
+/*  */
+header > #nv{
+    display: none;
+}
+/*  */
 nav{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 15px;
+}
+nav > h2, nav > img, .menu{
+    display: none;
 }
 #head{
     margin: 1%;
@@ -19,12 +27,11 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 5%;
     background-color: #f0eded;
     padding: 20px 15px;
-    gap: 45px;
 }
 .headSide{
     width: 25%;
@@ -32,21 +39,24 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
 }
 .leftItem{
     background-color: #ffa500;
+    font-size: 2rem;
+    color: #FFFFFF;
 }
-.headSide > p{
-    margin: 0;
+.leftItem > p{
+    opacity: 2.5;
 }
 .contact{
     background-color: black;
     color: #FFFFFF;
 }
 .page > a{
-    font-size: 1.35rem;
+    font-size: 1.75em;
     text-decoration-line: none;
+    color: #000000;
 }
 /* hero style */
 #hero{
@@ -69,8 +79,9 @@ h1{
 #hero > .container > p{
     background-color: #ffa500;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    font-weight: bolder;
     color: #FFFFFF;
-    width: 8%;
+    width: 90px;
     padding: 1.5% 2.5%;
     margin: 0 0 3% 3%;
     border-radius: 5%;
@@ -89,14 +100,14 @@ h1{
     font-size: large;
     color: #FFFFFF;
     opacity: 0.9;
-    padding: 2% 0;
+    padding: 3.5% 0 2% 0;
 }
 #features > p{
     font-size: 3.5rem;
     width: 78%;
     color: #FFFFFF;
     opacity: 0.9;
-    padding-bottom: 3.5%;
+    padding-bottom: 4.5%;
     text-align: center;
 }
 #features > .container{
@@ -104,7 +115,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    padding-bottom: 2%;
+    padding-bottom: 4.5%;
     margin: 0 3%;
 }
 #features .item{
@@ -137,17 +148,23 @@ h1{
 }
 /* partners */
 #partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 1%;
     border-radius: 2%;
     background-color: #1e1e1e;
-    text-align: center;
 }
 #partners > .container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
     padding: 3.5% 0;
+    gap: 20.5px;
+}
+#partners .box{
+    display: flex;
+    gap: 20.5px;
 }
 #partners > h2{
     color: #FFFFFF;
@@ -155,8 +172,8 @@ h1{
     opacity: 0.9;
 }
 #partners .card{
-    width: 20%;
-    height: 200px;
+    width: 245.5px;
+    height: 235.5px;
     border-radius: 3.5%;
     background-color: #aeaeae;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
@@ -189,6 +206,7 @@ h1{
     
 }
 #consultation input{
+    outline: none;
     padding: 6%;
     width: 350px;
     height: 20px;
@@ -199,7 +217,8 @@ h1{
     color: #FFFFFF;
     height: 71.4px;
     width: 401.8px;
-    font-size: medium;
+    font-size: large;
+    font-weight: bolder;
 }
 #consultation .item1{
     width: 50%;
@@ -208,7 +227,7 @@ h1{
     justify-content: space-between;
 }
 #consultation .item1 > p{
-    padding-bottom: 2.5%;
+    padding: 2.5% 0;
 }
 #consultation .item1 > h3{
     font-size: 5rem;
@@ -221,19 +240,19 @@ footer{
     flex-wrap: nowrap;
     gap: 20px;
 }
-footer > .box1{
+footer > .container1{
     width: 75%;
     background-color: #ffa500;
     border-radius: 2%;
 }
-footer .container1{
+footer .box1{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 2.5%;
 }
-footer .container1 > input{
+footer .box1 > input{
     width: 40%;
     padding: 1.65%;
     border-radius: 3%;
@@ -241,41 +260,53 @@ footer .container1 > input{
     border: none;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
-footer .container1 > button{
+footer .box1 > button{
     width: 15%;
     background-color: #1e1e1e;
     color: #FFFFFF;
-    opacity: 0.9;
-    font-size: 1.1rem;
+    opacity: 1.5;
+    font-size: 1rem;
+    font-weight: bolder;
     border-radius: 10%;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
-footer .container1 > h3{
+footer .box1 > h3{
     font-size: 2.5rem;
     font-weight: bolder;
     color: #FFFFFF;
     opacity: 0.9;
 }
-footer .container2{
+footer .box2{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 4%;
 }
-footer .container2 > .item > h4{
+footer .box2 .item > h4{
     font-size: 1.2rem;
     color: #FFFFFF;
     opacity: 0.9;
 }
 footer .item{
-    padding: 4%;
-    width: 30%;
     display: flex;
+    width: 30%;
     flex-direction: column;
     gap: 20px;
     color: #FFFFFF;
     opacity: 0.9;
 }
-footer > .box2{
+footer .card{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+footer .item2 p, footer .item3 p{
+    margin-bottom: 3px;
+}
+/* careers */
+
+footer > .container2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,19 +315,321 @@ footer > .box2{
     border-radius: 2%;
     padding: 2%;
 }
-footer > .box2  h3{
+footer > .container2  h3{
     font-size: 2rem;
     color: #FFFFFF;   
     opacity: 0.9; 
     margin-bottom: 8%;
 }
-footer > .box2  p{
+footer > .container2  p{
     color: #FFFFFF;   
     opacity: 0.9;
 }
-footer > .box2 > a{
+footer > .container2 > a{
     text-decoration-line: none;
     color: #FFFFFF;   
     opacity: 0.9;
-    
+}
+@media(max-width:1200px){
+    nav{
+        gap: 10px;
+    }
+    .headSide{
+        font-size: 1.25rem;
+    }
+    .leftItem{
+        font-size: 1.5rem;
+    }
+    .page > a{
+        font-size: 1.25rem;
+    }
+    /* hero */
+    #hero > .container{
+        height: 480px;
+    }
+    h1{
+        font-size: 3.5rem;        
+    }
+    /* features */
+    #features > p{
+        font-size: 2.3rem;
+    }
+    #features > .container h2{
+        font-size: 1.7rem;
+    }
+    #features > .container h3{
+        font-size: 1.3rem;
+    }
+    /* partners */
+    #partners .card{
+        width: 200.5px;
+        height: 190.5px;
+    }
+    /* consultaion */
+    #consultation input{
+        padding: 6%;
+        width: 275px;
+        height: 20px;
+        border-radius: 5%;
+    }
+    #consultation button{
+        height: 61.15px;
+        width: 316.27px;
+    }
+    #consultation .item1 > h3{
+        font-size: 3.5rem;
+    }
+    /* footer */
+    footer .box1 > button{
+        font-size: 0.8rem;
+    }
+    footer .box1 > h3{
+        font-size: 2.2rem;
+    }
+    footer .box2 .item > h4{
+        font-size: 1rem;
+    }
+    footer .box2 .item  p{
+        font-size: small;
+    }
+    footer .box2 .item2{
+        width: 40%;
+    }
+    /* careers */
+    footer > .container2  h3{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:933px){
+    #head, #hero, #features, #partners, #consultation, footer{
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    /*  */
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 35.5px;
+        background-color: #ebeaea;
+    }
+    .menu > a{
+        font-size: 1.75em;
+        text-decoration-line: none;
+        color: #000000;
+    }
+    .page, .headSide{
+        display: none;
+    }
+    /*  */
+    #head{
+        height: 103.6px;
+        margin-top: 0;
+    }
+    footer > .container1, footer > .container2{
+        border-radius: 0;
+    }
+    .page, .headSide{
+        display: none;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    nav{
+        background-color: #ebeaea;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    /*  */
+
+    nav > img, .menu-icon{
+        padding: 35.5px 0 35.5px 3%;
+        display: block;
+        width: 16%;
+    }
+    nav > img{
+        padding-top: 1%;
+        height: 60px;
+        width: 85px;
+    }
+    /* hero */
+    #hero > .container{
+        height: 420px;
+    }
+    h1{
+        font-size: 3rem;        
+    }
+    /* features */
+    #features > p{
+        font-size: 2rem;
+    }
+    #features > .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding-bottom: 5%;
+        margin: 0;
+    }
+    #features .item{
+        width: 75%;
+    }
+    #features > .container h2{
+        font-size: 2rem;
+    }
+    #features > .container h3{
+        font-size: 1.5rem;
+    }
+    /* partners */
+    #partners > .container{
+        flex-direction: column;
+        width: 80%;
+        padding: 4.5% 0;
+        padding-bottom: 6.5%;
+        gap: 25.5px;
+    }
+    #partners .box{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+    /* consultation  */
+    #consultation > .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #consultation input{
+        padding: 3%;
+        padding-right: 0;
+        width: 100%;
+    }
+    #consultation button{
+        height: 56.4px;
+        width: 103.473%;
+    }
+    #consultation .item1{
+        gap: 25px;
+        width: 75%;
+    }
+    #consultation .item2{
+        width: 75%;
+        padding-bottom: 6%;
+    }
+    #consultation .item1 > h3{
+        font-size: 2.9rem;
+    }
+    /* footer */
+    footer{
+        margin: 1% 0;
+        gap:0px;
+    }
+    footer > .container1{
+        width: 100%;
+    }
+    footer .box1{
+        padding-left: 5%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer .box1 > input{
+        width: 55%;
+        padding: 2.5% 1.65%;
+    }
+    footer .box1 > button{
+        width: 30%;
+        padding: 3% 0;
+    }
+    footer .box2{
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+    }
+    footer .card{
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 4.5%;
+    } 
+    footer > .container2{
+        display: none;
+    }
+    footer .item{
+        width: 40%;
+    }
+}
+@media(max-width:530px){
+    /* hero */
+    #hero > .container{
+        height: 385px;
+    }
+    h1{
+        font-size: 2.5rem;        
+    }
+    /* features */
+    #features > p{
+        font-size: 1.3rem;
+    }
+    #features > .container{
+        padding-bottom: 6.5%;
+    }
+    #features > .container h2{
+        font-size: 1.6rem;
+    }
+    #features > .container h3{
+        font-size: 1.3rem;
+    }
+    #features > h2{
+        font-size: small;
+    }
+    /* partners */
+    #partners > .container{
+        padding: 11.5% 0;
+        gap: 30.5px;
+    }
+    #partners .box{
+        flex-direction: column;
+        align-items: center;
+        gap: 30.5px;
+    }
+    #partners > h2{
+        padding-top: 11.5%;
+        opacity: 0.9;
+    }
+    #partners .card{
+        width: 245.5px;
+        height: 235.5px;
+    }
+    /* consultation */
+    #consultation button{
+        height: 45px;
+        width: 103.473%;
+        font-size: medium;
+    }
+    #consultation .item2{
+        padding-bottom: 11.5%;
+    }
+    #consultation .item1 > h3{
+        font-size: 2.2rem;
+    }
+    #consultation > h2{
+        padding-top: 11.5%;
+        font-size: large;
+    }
+    #consultation .item1 > p{
+        font-size: small;
+    }
+    /* footer */
+    footer .box1 > button{
+        font-size: 0.7rem;
+    }
+    footer .box2 .item > h4{
+        font-size: 1.01rem;
+    }
+    footer .box2 p{
+        font-size: smaller;
+    }
 }
