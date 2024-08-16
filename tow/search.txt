@@ -1,6 +1,0 @@
-diplay: how you want to display elements
-attributes:
-1-inline: cant have width and height to be set and margin top and bottom
-2-inline-block: make them next to each other if there is a space else make them block allows margin and padding
-3-flex:it is a layout system to make elements in same container either from left to right or from top to bottom 
-you can set the direction in display using the attribute "flex-direction"
