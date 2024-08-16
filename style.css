@@ -493,8 +493,7 @@ footer > .container2 > a {
     display: block;
     cursor: pointer;
     align-self: center;
-    width: 100px;
-    width: fit-content;
+    width: 50px;
   }
   .menu-icon {
     border: 2px solid black;
