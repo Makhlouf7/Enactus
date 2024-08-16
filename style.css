@@ -493,18 +493,20 @@ footer > .container2 > a {
     display: block;
     cursor: pointer;
     align-self: center;
-    width: fit-content;
+    /* width: fit-content; */
   }
   .menu-icon {
     border: 2px solid black;
     border-radius: 5px;
     margin-right: 20px;
+    width: 50px;
   }
 
   nav > img {
     padding: 8px 0;
     height: 60px;
-    margin-left: 20px;
+    margin-left: 10px;
+    width: 100px;
   }
   /* hero */
   #hero > .container {
